@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dankwhite"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="415dp"
+        android:layout_height="590dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/lowerbuttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <LinearLayout
+        android:id="@+id/lowerbuttons"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:background="@color/treegreen"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:text="Home"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Search"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:text="Search"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/Profile"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:text="Profile" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="414dp"
+        android:layout_height="82dp"
+        android:background="@color/treegreen"
+
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="BOOK - ED!"
+        android:textColor="@color/dankwhite"
+        android:textSize="40dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
